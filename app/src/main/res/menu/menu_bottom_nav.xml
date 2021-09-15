@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Trips"
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/report"/>
+
+    <item android:title="Reports"
+        android:id="@+id/mesageFragment"
+        android:icon="@drawable/report"/>
+    <item android:title="Messages"
+        android:id="@+id/profileFragment2"
+        android:icon="@drawable/message"/>
+    <item android:title="MyTrips"
+        android:id="@+id/notificationFragment"
+        android:icon="@drawable/report"/>
+
+</menu>

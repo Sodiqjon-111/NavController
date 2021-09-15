@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Trips"
+        android:id="@+id/fragment001"
+        android:icon="@drawable/report"/>
+
+    <item android:title="Reports"
+        android:id="@+id/fragment002"
+        android:icon="@drawable/report"/>
+    <item android:title="Messages"
+        android:id="@+id/fragment003"
+        android:icon="@drawable/message"/>
+
+
+</menu>

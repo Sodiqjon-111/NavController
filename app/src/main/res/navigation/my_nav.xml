@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.navcontroller.homeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/mesageFragment"
+        android:name="com.example.navcontroller.mesageFragment"
+        android:label="fragment_mesage"
+        tools:layout="@layout/fragment_mesage" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.example.navcontroller.notificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/fragment001"
+        android:name="com.example.navcontroller.Fragment001"
+        android:label="fragment_001"
+        tools:layout="@layout/fragment_001" />
+    <fragment
+        android:id="@+id/fragment002"
+        android:name="com.example.navcontroller.Fragment002"
+        android:label="fragment_002"
+        tools:layout="@layout/fragment_002" />
+    <fragment
+        android:id="@+id/fragment003"
+        android:name="com.example.navcontroller.Fragment003"
+        android:label="fragment_003"
+        tools:layout="@layout/fragment_003" />
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.example.navcontroller.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
