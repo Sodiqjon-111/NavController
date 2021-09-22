@@ -4,11 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragment001">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.appcompat.widget.Toolbar
+        android:elevation="10dp"
+        android:background="@drawable/toolbar001"
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
+        android:layout_height="?attr/actionBarSize" >
+        <ImageView
+            android:padding="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/notification"
+            android:layout_gravity="end"/>
+    </androidx.appcompat.widget.Toolbar>
 </FrameLayout>

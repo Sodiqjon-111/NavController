@@ -1,23 +1,29 @@
 package com.example.navcontroller
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.graphics.drawable.ColorDrawable
+import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.FragmentActivity
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.*
+import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_001.*
 
 class MainActivity : AppCompatActivity() {
 
+
+
     private lateinit var navController: NavController
     private lateinit var drawerLayout: DrawerLayout
-    private lateinit var appBarConfiguration: AppBarConfiguration
+   lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var listener: NavController.OnDestinationChangedListener
 
 
@@ -27,21 +33,30 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-         navController = findNavController(R.id.fragment)
-//
-    appBarConfiguration= AppBarConfiguration(setOf(R.id.homeFragment,R.id.mesageFragment,R.id.notificationFragment,R.id.profileFragment2))
-//        setupActionBarWithNavController(navController,appBarConfiguration)
-     bottom_nav.setupWithNavController(navController)
+        navController = findNavController(R.id.fragment)
+
+        appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.homeFragment,
+                R.id.mesageFragment,
+                R.id.notificationFragment,
+                R.id.profileFragment2
+            )
+        )
+
+        bottom_nav.setupWithNavController(navController)
 
         drawerLayout = findViewById(R.id.drawer_layout)
         nav_view.setupWithNavController(navController)
 
         appBarConfiguration = AppBarConfiguration(navController.graph, drawerLayout)
-        setupActionBarWithNavController(navController,appBarConfiguration)
+     // setupActionBarWithNavController(navController, appBarConfiguration)
+
         listener =
             NavController.OnDestinationChangedListener { controller, destination, arguments ->
-                if (destination.id == R.id.homeFragment) {
+                if (destination.id == R.id.fragment001) {
                     supportActionBar?.setBackgroundDrawable(ColorDrawable(getColor(R.color.teal_700)))
+                    toolbar_home.visibility=View.GONE
                 }
             }
     }
@@ -62,5 +77,6 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration) ||
                 super.onSupportNavigateUp()
     }
+
 
 }
