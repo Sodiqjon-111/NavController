@@ -5,9 +5,11 @@
       <map>
         <entry key="..\:/Users/sodiqjon/AndroidStudioProjects/NavController/app/src/main/res/drawable/toolbar001.xml" value="0.28" />
         <entry key="..\:/Users/sodiqjon/AndroidStudioProjects/NavController/app/src/main/res/layout/activity_main.xml" value="0.2225705329153605" />
-        <entry key="..\:/Users/sodiqjon/AndroidStudioProjects/NavController/app/src/main/res/layout/fragment_001.xml" value="0.22" />
+        <entry key="..\:/Users/sodiqjon/AndroidStudioProjects/NavController/app/src/main/res/layout/fragment_001.xml" value="0.25" />
         <entry key="..\:/Users/sodiqjon/AndroidStudioProjects/NavController/app/src/main/res/layout/fragment_003.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/sodiqjon/AndroidStudioProjects/NavController/app/src/main/res/layout/fragment_home.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/sodiqjon/AndroidStudioProjects/NavController/app/src/main/res/layout/fragment_mesage.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/sodiqjon/AndroidStudioProjects/NavController/app/src/main/res/layout/fragment_notification.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/sodiqjon/AndroidStudioProjects/NavController/app/src/main/res/layout/fragment_profile.xml" value="0.2957427536231884" />
         <entry key="..\:/Users/sodiqjon/AndroidStudioProjects/NavController/app/src/main/res/menu/menu_bottom_nav.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/sodiqjon/AndroidStudioProjects/NavController/app/src/main/res/menu/menu_drawer.xml" value="0.36666666666666664" />
